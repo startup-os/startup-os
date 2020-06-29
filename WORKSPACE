@@ -252,8 +252,8 @@ container_pull(
 )
 container_pull(
     name = "alpine_java_git",
-    registry = "gcr.io",
-    repository = "startup-os/alpine-java-git",
-    #tag = "latest",
-    digest = "sha256:d27494f6034ff3cd38bd2cde9bfea019f568565d2bb14d2d450a44cd891cf28c",
+    registry = "index.docker.io",
+    repository = "zoidbergwill/startup-os-alpine-java-git",
+    # tag = "latest",
+    digest = "sha256:4d500718ccf86a05cd7123af9704d16a7a0c00da4624548aeb585c48ebba3ea1",
 )
