@@ -62,14 +62,26 @@ jobs:
       - run: './tools/get_android_sdk.sh'
       - run:
           name: "StartupOS: building"
-          command: ./build.sh
+          command: ./build.sh --config=ci
           environment:
             ANDROID_HOME: /home/circleci/android_sdk/
+      - store_artifacts:
+        path: bep.json
+        destination: build-event-protocol-build.json
+      - store_artifacts:
+        path: test.profile.gz
+        destination: build.profile.gz
       - run:
           name: "StartupOS: testing"
-          command: ./test.sh
+          command: ./test.sh --config=ci
           environment:
             ANDROID_HOME: /home/circleci/android_sdk/
+      - store_artifacts:
+        path: bep.json
+        destination: build-event-protocol-test.json
+      - store_artifacts:
+        path: test.profile.gz
+        destination: test.profile.gz
       - run:
           name: "Hasadna: cloning the repo"
           command: git clone https://github.com/hasadna/hasadna /home/circleci/hasadna/

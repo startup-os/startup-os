@@ -1,3 +1,17 @@
 build --proto_compiler //external:proto_compiler \
       --proto_toolchain_for_java //external:proto_java_toolchain
 test --test_output=errors
+
+common:ci --show_progress_rate_limit=5
+common:ci --curses=yes
+common:ci --color=yes
+common:ci --terminal_columns=143
+common:ci --show_timestamps
+common:ci --verbose_failures
+common:ci --announce_rc
+common:ci --build_event_json_file_path_conversion=false
+common:ci --build_event_json_file="bep.json"
+common:ci --experimental_generate_json_trace_profile
+common:ci --experimental_profile_cpu_usage
+common:ci --experimental_json_trace_compression
+common:ci --profile=test.profile.gz
