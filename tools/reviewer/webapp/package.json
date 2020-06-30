@@ -35,7 +35,7 @@
     "codelyzer": "~4.5.0",
     "core-js": "^2.5.4",
     "firebase": "^5.8.1",
-    "google-protobuf": "^3.6.1",
+    "google-protobuf": "^3.12.2",
     "hammerjs": "^2.0.8",
     "highlight.js": "^9.15.6",
     "jasmine-core": "~3.5.0",
