@@ -5,10 +5,10 @@ commands:
       - run:
           name: Install bazel
           command: |
-            curl -OL https://github.com/bazelbuild/bazel/releases/download/0.24.0/bazel-0.24.0-installer-linux-x86_64.sh
-            chmod +x bazel-0.24.0-installer-linux-x86_64.sh
-            sudo ./bazel-0.24.0-installer-linux-x86_64.sh
-            rm ./bazel-0.24.0-installer-linux-x86_64.sh
+            curl -OL https://github.com/bazelbuild/bazel/releases/download/3.3.0/bazel-3.3.0-installer-linux-x86_64.sh
+            chmod +x bazel-3.3.0-installer-linux-x86_64.sh
+            sudo ./bazel-3.3.0-installer-linux-x86_64.sh
+            rm ./bazel-3.3.0-installer-linux-x86_64.sh
             bazel info release
   install-deps:
     steps:
