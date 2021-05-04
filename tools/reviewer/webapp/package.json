@@ -32,7 +32,7 @@
     "@types/jasminewd2": "~2.0.8",
     "@types/node": "~8.9.4",
     "angularfire2": "^5.4.2",
-    "codelyzer": "~4.5.0",
+    "codelyzer": "~6.0.2",
     "core-js": "^3.6.5",
     "firebase": "^5.8.1",
     "google-protobuf": "^3.12.2",
