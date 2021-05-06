@@ -43,7 +43,7 @@ public class InitCommand implements AaCommand {
 
   @FlagDesc(name = "startupos_repo", description = "StartupOS git repo")
   public static Flag<String> startuposRepo =
-      Flag.create("https://github.com/google/startup-os.git");
+      Flag.create("https://github.com/startup-os/startup-os.git");
 
   private static final String GLOBAL_REGISTRY_CONFIG = "tools/reviewer/global_registry.prototxt";
 
